@@ -18,3 +18,7 @@ Route::get('/', function () {
     // NewTrade::dispatch('TEST');
     return view('welcome');
 });
+Route::get('/send', function () {
+    // NewTrade::dispatch('TEST');
+    return view('welcome');
+});
