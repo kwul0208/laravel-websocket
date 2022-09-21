@@ -129,4 +129,24 @@
             </div>
         </div>
     </body>
+    {{-- <script src="{{ asset('js/app.js') }}"></script> --}}
+    {{-- <script src="/js/app.js"></script> --}}
+    {{-- <script>
+        console.log('ok');
+        window.Echo.channel('trades')
+            .listen('NewTrade', (e) => {
+                console.log('asd');
+                console.log(e);
+                console.log(e.trade);
+                // document.getElementById('latest_trade_user').innerText = e.trade;
+            })
+    </script> --}}
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script>
+      Echo.channel('trades').listen('NewTrade', (e) => {
+        // console.log(e.msg);
+        // console.log(e);
+      })
+    </script>
+
 </html>
